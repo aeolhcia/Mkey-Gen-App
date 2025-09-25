@@ -1,8 +1,8 @@
-# MKey Generator
+# android mkey generator
 
-PSA: this is mostly vibe coded, yes i know vibe coding is bad, but it works and im lazy sorry.
+PSA: This is mostly vibe coded, yes i know vibe coding is bad, but it works and im lazy im sorry.
 
-MKey Generator is a simple and user-friendly Android application designed to generate master keys for various Nintendo devices. It provides a clean, modern interface for inputting system information and retrieving the corresponding master key from mkey.salthax.org.
+mkey generator is a simple and user-friendly Android application designed to generate master keys for various Nintendo devices. It provides a clean, modern interface for inputting system information and retrieving the corresponding master key from mkey.salthax.org.
 
 ## Application Process
 
@@ -24,13 +24,13 @@ MKey Generator is a simple and user-friendly Android application designed to gen
 
 Q: What is the point of this? Why can't you just use the website?
 
-A: this tool is mostly intended for people who clean and refurbish consoles all day. The website is fully functional and good for 99% of people. However, its ui can be pretty annoying to use on mobile, and when reseting many devices in a row having a easier to use tool is nice to have!
+A: This tool is mostly intended for people who clean and refurbish consoles all day. The website is fully functional and good enough for 99% of people. However, its ui can be pretty annoying to use on mobile, and when reseting lots of devices in a row having a easier to use tool is nice to have!
 
 ---
 
 ## Screenshots
 
-//TODO
+<img src="/imgs/screenshot01.png" width="330">  <img src="/imgs/screenshot03.png" width="330">  <img src="/imgs/screenshot02.png" width="330"> 
 
 ---
 
