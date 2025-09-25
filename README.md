@@ -20,6 +20,14 @@ MKey Generator is a simple and user-friendly Android application designed to gen
 
 ---
 
+## FAQ
+
+Q: What is the point of this? Why can't you just use the website?
+
+A: this tool is mostly intended for people who clean and refurbish consoles all day. The website is fully functional and good for 99% of people. However, its ui can be pretty annoying to use on mobile, and when reseting many devices in a row having a easier to use tool is nice to have!
+
+---
+
 ## Screenshots
 
 //TODO
