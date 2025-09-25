@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
-        android:layout_weight="1"
+        android:layout_weight="0"
         android:background="@drawable/rounded_rectangle_background"
         android:orientation="vertical"
         android:padding="10dp">
@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
-        android:layout_weight="1"
+        android:layout_weight="0"
         android:background="@drawable/rounded_rectangle_background"
         android:orientation="vertical"
         android:padding="10dp">
@@ -84,13 +84,15 @@
 
 
     <LinearLayout
+        android:id="@+id/additional_data_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:layout_weight="1"
         android:background="@drawable/rounded_rectangle_background"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:visibility="gone">
 
         <TextView
             android:layout_width="wrap_content"
@@ -113,7 +115,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
-        android:layout_weight="1"
+        android:layout_weight="0"
         android:background="@drawable/rounded_rectangle_background"
         android:orientation="vertical"
         android:padding="10dp">
@@ -142,7 +144,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="12dp"
-        android:layout_weight="1"
+        android:layout_weight="0"
         android:text="@string/generate_key"
         android:textSize="32sp" />
 

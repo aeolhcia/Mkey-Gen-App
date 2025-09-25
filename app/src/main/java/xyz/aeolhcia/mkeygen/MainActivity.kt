@@ -3,11 +3,14 @@ package xyz.aeolhcia.mkeygen // IMPORTANT: Change this to match your project's p
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.os.Bundle
+import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -29,6 +32,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var monthToPass: String
     private lateinit var dayToPass: String
     private lateinit var generateButton: Button
+    private lateinit var additionalDataLayout: LinearLayout
+    private lateinit var splashTextView: TextView
 
     @SuppressLint("DefaultLocale", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,15 +47,35 @@ class MainActivity : AppCompatActivity() {
         val additionalDataEditText: EditText = findViewById(R.id.additional_data_edit_text)
         val inquiryNumberEditText: EditText = findViewById(R.id.inquiry_number_edit_text)
         val masterKeyTextView: TextView = findViewById(R.id.master_key_text_view)
-        val splashTextView: TextView = findViewById(R.id.splash_text_view)
+        splashTextView = findViewById(R.id.splash_text_view)
         generateButton = findViewById(R.id.generate_button)
-
-        splashTextView.text = getSplashText()
+        additionalDataLayout = findViewById(R.id.additional_data_layout)
 
         // Populate the device spinner
         val deviceOptions = listOf("Wii", "WiiU", "DSi", "3DS", "Switch")
         val deviceAdapter = ArrayAdapter(this, R.layout.spinner_item, deviceOptions)
         deviceSpinner.adapter = deviceAdapter
+
+        deviceSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                val selectedDevice = parent?.getItemAtPosition(position).toString()
+                if (selectedDevice == "Switch") {
+                    // Show the layout if Switch is selected
+                    additionalDataLayout.visibility = View.VISIBLE
+                } else {
+                    // Hide the layout for all other devices
+                    additionalDataLayout.visibility = View.GONE
+                }
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+            }
+        }
 
         // Set up the date picker
         val calendar = Calendar.getInstance()
@@ -70,7 +95,8 @@ class MainActivity : AppCompatActivity() {
                 this,
                 { _, selectedYear, selectedMonth, selectedDay ->
                     calendar.set(selectedYear, selectedMonth, selectedDay)
-                    selectedDateTextView.text = "Selected Date: " + simpleDateFormat.format(calendar.time)
+                    selectedDateTextView.text =
+                        "Selected Date: " + simpleDateFormat.format(calendar.time)
                     monthToPass = String.format("%02d", selectedMonth + 1)
                     dayToPass = String.format("%02d", selectedDay)
                 },
@@ -106,9 +132,6 @@ class MainActivity : AppCompatActivity() {
             val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
             imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
 
-            // 3. Update the splash text
-            splashTextView.text = getSplashText()
-
             // 4. Retrieve and prepare the data
             val selectedDevice = deviceSpinner.selectedItem.toString()
             val additionalData = additionalDataEditText.text.toString()
@@ -123,9 +146,15 @@ class MainActivity : AppCompatActivity() {
             val deviceCode = deviceMap[selectedDevice] ?: ""
 
             // 5. Make the POST request
-            fetchMasterKey(deviceCode, monthToPass, dayToPass, additionalData, inquiryNumber, masterKeyTextView)
+            fetchMasterKey(
+                deviceCode,
+                monthToPass,
+                dayToPass,
+                additionalData,
+                inquiryNumber,
+                masterKeyTextView
+            )
         }
-
 
 
     }
@@ -185,6 +214,8 @@ class MainActivity : AppCompatActivity() {
                         if (masterKey != null) {
                             textView.text = masterKey
                             textView.textSize = 64f // Change to 48sp for the key
+                            splashTextView.text = getSplashText()
+
                         } else {
                             textView.text = "Failed to find master key."
                             textView.textSize = 42f // Revert to 32sp on failure
@@ -198,10 +229,10 @@ class MainActivity : AppCompatActivity() {
                         textView.textSize = 36f // Revert to 32sp on failure
                         generateButton.text = "Generate Key"
                         generateButton.isEnabled = true
-                        }
                     }
                 }
             }
+        }
         )
     }
 

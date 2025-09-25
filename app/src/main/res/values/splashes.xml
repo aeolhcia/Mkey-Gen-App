@@ -1,157 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="general_splashes">
-        <item>Generating awesome keys!</item>
-        <item>Made with ❤️ by chloe</item>
+        <item>generating awesome keys!</item>
+        <item>made with ❤️ by chloe</item>
         <item>that is actually usable on mobile lol</item>
         <item>bye bye parental controls</item>
         <item>pov your on you 1000th wii rip</item>
-        <item>Press A to continue</item>
-        <item>Works on your cousin’s DS too</item>
-        <item>Definitely not cursed</item>
-        <item>Not clickbait, actually works</item>
-        <item>Now with 200% more key!</item>
+        <item>press A to continue</item>
+        <item>works on your cousin’s DS too!</item>
+        <item>definitely not cursed</item>
+        <item>not clickbait, actually works</item>
+        <item>now with 200% more key!</item>
         <item>✨magical numbers✨</item>
-        <item>Insert coin to play</item>
-        <item>What parental controls?</item>
-        <item>Probably written at 3am</item>
-        <item>One day I’ll clean this code</item>
+        <item>insert coin to play</item>
+        <item>what parental controls?</item>
+        <item>probably written at 3am</item>
+        <item>one day I’ll clean this code</item>
         <item>“It just works” — Todd Howard</item>
-        <item>Not responsible for bricked consoles</item>
-        <item>Bug-free… probably</item>
-        <item>Yes it’s open source</item>
-        <item>Press Start to generate</item>
-        <item>It’s dangerous to go alone, take this key</item>
-        <item>Insert memory card</item>
+        <item>not responsible for bricked consoles</item>
+        <item>bug-free!*</item>
+        <item>press Start to generate</item>
+        <item>it’s dangerous to go alone, take this key!</item>
+        <item>insert memory card</item>
         <item>100% completion run</item>
-        <item>Not a crypto miner, promise</item>
-        <item>Batteries not included</item>
-        <item>Certified fresh™</item>
-        <item>Now gluten-free!</item>
-        <item>Some assembly required</item>
-        <item>No warranty implied</item>
-        <item>Now with flavor</item>
-        <item>Powered by vibes</item>
-        <item>Trust me I’m a generator</item>
-        <item>Keys? I got keys</item>
-        <item>“Just one more dump”</item>
-        <item>Insert bad joke here</item>
-        <item>Look mom, no hands!</item>
+        <item>not a crypto miner i promis</item>
+        <item>batteries not included</item>
+        <item>certified fresh™</item>
+        <item>now gluten-free!</item>
+        <item>some assembly required</item>
+        <item>no warranty implied</item>
+        <item>now with extra flavor!</item>
+        <item>powered by vibes</item>
+        <item>keys? I got keys</item>
+        <item>insert bad joke here</item>
+        <item>look mom, no hands!</item>
         <item>🚀 blasting off again</item>
-        <item>Totally not sketchy</item>
-        <item>Unstable but in a fun way</item>
-        <item>Banana for scale</item>
-        <item>Free with purchase of nothing</item>
-        <item>Now with 50% more chaos</item>
+        <item>totally not sketchy</item>
+        <item>unstable, but in a fun way!</item>
+        <item>banana for scale</item>
+        <item>free with purchase!</item>
+        <item>now with 50% more chaos</item>
         <item>printf("Hello, Key!");</item>
-        <item>Tested in production</item>
-        <item>Now 200% hackier</item>
-        <item>// TODO: fix this later</item>
-        <item>Runs on pure caffeine</item>
-        <item>Return true;</item>
-        <item>Continue? Y/N</item>
+        <item>tested in production</item>
+        <item>now 200% hackier</item>
+        <item>// TODO: write more splashes</item>
+        <item>runs on caffeine + stimulants</item>
+        <item>return true;</item>
         <item>up, up, down, down, left, right, left, right, B, A, start</item>
-        <item>You found a secret!</item>
-        <item>Cheat code accepted</item>
-        <item>Insert controller 2</item>
-        <item>Infinite lives unlocked</item>
-        <item>Now with quantum flavor</item>
-        <item>Time is an illusion</item>
-        <item>Extra crispy edition</item>
-        <item>100% organic keys</item>
-        <item>It’s-a me, a key!</item>
-        <item>Sorry Mario, your key is in another castle</item>
-        <item>Wahoo!</item>
-        <item>Here we gooo!</item>
-        <item>Now with extra mushrooms</item>
+        <item>you found a secret!</item>
+        <item>cheat code accepted</item>
+        <item>infinite lives unlocked</item>
+        <item>now with quantum flavor!</item>
+        <item>time is an illusion</item>
+        <item>extra crispy edition</item>
+        <item>100% organic keys!</item>
+        <item>sorry Mario, your key is in another castle</item>
+        <item>wahoo!</item>
+        <item>here we gooo!</item>
+        <item>now with extra mushrooms!</item>
         <item>1-UP unlocked</item>
-        <item>Mama mia, that’s a spicy key</item>
-        <item>Luigi did all the work</item>
-        <item>Press B to generate faster</item>
-        <item>You got a small key!</item>
+        <item>mama mia, that’s a spicy key!</item>
+        <item>luigi did nothing wrong</item>
+        <item>press B to generate faster</item>
+        <item>you got a small key!</item>
         <item>da-da-da-DAAA!</item>
-        <item>Hero of Keys</item>
-        <item>Master Key > Master Sword</item>
-        <item>Hey! Listen!</item>
-        <item>Saving Hyrule one key at a time</item>
-        <item>A wild Cucco appears!</item>
-        <item>Collected all 4 spiritual keys</item>
-        <item>Open your eyes… and your console</item>
-        <item>Gotta generate ‘em all!</item>
-        <item>Wild key appeared!</item>
-        <item>Critical hit!</item>
+        <item>hero of Keys</item>
+        <item>master Key > Master Sword</item>
+        <item>hey! listen!</item>
+        <item>saving Hyrule one key at a time</item>
+        <item>collected all 4 spiritual keys</item>
+        <item>open your eyes… and your console</item>
+        <item>gotta generate ‘em all!</item>
+        <item>a wild key appeared!</item>
+        <item>critical hit!</item>
         <item>Professor Oak: You can’t use that here</item>
-        <item>Your key evolved!</item>
-        <item>Key used Unlock — it’s super effective!</item>
-        <item>Trainer Chloe wants to battle!</item>
-        <item>Pikachu! I choose you!</item>
-        <item>Registered in the Keydex</item>
-        <item>Do you want to give a nickname to this key?</item>
-        <item>Do a barrel roll!</item>
-        <item>Falcon… KEY!</item>
+        <item>your key evolved!</item>
+        <item>key used Unlock — it’s super effective!</item>
+        <item>trainer chloe wants to battle!</item>
+        <item>pikachu! I choose you!</item>
+        <item>registered in the Keydex</item>
+        <item>do you want to give a nickname to this key?</item>
+        <item>do a barrel roll!</item>
+        <item>falcon… KEY!</item>
         <item>Nook Miles +200</item>
-        <item>Smash Ball unlocked</item>
-        <item>Now in 4K!</item>
-        <item>Your move, Mr. Sakurai</item>
-        <item>Paid off Tom Nook with keys</item>
-        <item>Kirby inhaled the keys</item>
-        <item>Game Over…? Not today</item>
-        <item>I’m really feeling it!</item>
-        <item>My body is ready!</item>
-        <item>Factory reset? More like factory regret</item>
-        <item>Another day, another sticky controller</item>
-        <item>Who spilled soda in this Wii?</item>
-        <item>GameCube handles: still undefeated</item>
-        <item>Sticker residue: final boss</item>
-        <item>Certified pre-loved™</item>
-        <item>Reset, restore, repeat</item>
-        <item>Somebody saved over your Pokémon file 😢</item>
-        <item>Console graveyard, population: 1254</item>
-        <item>Manuals lost to time</item>
-        <item>Scratched disc detected</item>
-        <item>Still smells like basement</item>
-        <item>Memory cards full of surprises</item>
-        <item>Achievement unlocked: cleaned 100 Wiis</item>
-        <item>Another day, another Mario Kart save</item>
-        <item>Only 37 more stickers to peel off…</item>
-        <item>Controller drift? Never heard of her</item>
-        <item>Insert coin to continue</item>
-        <item>N64 controllers were built different</item>
-        <item>Game Boy screens: basically indestructible</item>
-        <item>That purple transparent plastic tho</item>
-        <item>CRT glow hits different</item>
-        <item>Found your old high score</item>
-        <item>Don’t forget to eject before powering off</item>
-        <item>Another Xbox 360 red ringed 😔</item>
-        <item>Why is this Wii full of Miis?</item>
-        <item>Dust bunnies: the real final boss</item>
-        <item>Secret stash of old DS styluses</item>
-        <item>Watch out for Slim Digits</item>
+        <item>now in 4K!</item>
+        <item>your move, Mr. Sakurai</item>
+        <item>paid off Tom Nook with keys</item>
+        <item>kirby inhaled the keys</item>
+        <item>my body is ready!</item>
+        <item>certified pre-loved™</item>
+        <item>reset, restore, repeat</item>
+        <item>console graveyard, population: 1254</item>
+        <item>achievement unlocked: reset 100 Wiis</item>
+        <item>insert coin to continue</item>
+        <item>that purple transparent plastic tho</item>
+        <item>don’t forget to eject before unplugging!</item>
+        <item>watch out for Slim Digits</item>
         <item>insert funny splash text here</item>
-        <item>licensed and keygen’d</item>
+        <item>licensed and keygen\’d</item>
         <item>now with 100% less bricking</item>
         <item>factory reset speedrun any%</item>
-        <item>console graveyard caretaker</item>
         <item>parental controls fear me</item>
-        <item>this is your 37th ds today</item>
+        <item>this is your 37th ds today isn\'t it?</item>
         <item>pls don’t tell nintendo</item>
         <item>that one mii face haunts me</item>
-        <item>yep, it’s sticky again</item>
-        <item>bless this mess of cables</item>
-        <item>crusty wiimotes detected</item>
         <item>disk tray go brrr</item>
-        <item>your save data is cursed</item>
-        <item>made with love (and dust)</item>
         <item>1000 consoles later…</item>
         <item>keys before coffee</item>
         <item>nintendo don’t look</item>
-        <item>someone’s mii named “poop”</item>
-        <item>press start to regret</item>
-        <item>this wii has 600 hours of just dance</item>
         <item>✨spicy secret key✨</item>
         <item>one key to rule them all</item>
-        <item>achievement unlocked: sticky button</item>
         <item>please clap</item>
+        <item>as seen on tv!</item>
+        <item>may contain nuts!</item>
+        <item>limited edition!</item>
+        <item>best in class!</item>
+        <item>one of a kind!</item>
+        <item>made in canada!</item>
+        <item>keyboard compatible!</item>
+        <item>the bees knees!</item>
+        <item>open source!</item>
+        <item>not on steam!</item>
+        <item>12 herbs and spices!</item>
+        <item>random splash!</item>
+        <item>waterproof!</item>
+        <item>tell your friends!</item>
+        <item>NP is not in P!</item>
+        <item>take frequent breaks!</item>
+        <item>4815162342 lines of code!</item>
+        <item>finger licking!</item>
+        <item>internet enabled!</item>
+        <item>turing complete!</item>
+        <item>it\'s groundbreaking!</item>
+        <item>undefeated!</item>
+        <item>check out the far lands!</item>
     </string-array>
 
     <string name="splash_01_01">New year, new keys!</string>
@@ -171,7 +153,7 @@
     <string name="splash_06_21">First day of summer! Keys on the beach!</string>
     <string name="splash_07_01">Happy Canada Day! 🍁🔑</string>
     <string name="splash_07_20">One small step for man, one giant key for mankind</string>
-    <string name="splash_07_27">Happy Pride! ❤️🧡💛💚💙💜</string>
+    <string name="splash_06_27">Happy Pride! ❤️🧡💛💚💙💜</string>
     <string name="splash_08_05">Heritage Day! Celebrate with keys</string> <!-- 1st Mon Aug in Alberta -->
     <string name="splash_08_08">International Cat Day 🐱🔑</string>
     <string name="splash_08_19">yeehaw its stampede lite 🤠</string>
