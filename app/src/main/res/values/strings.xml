@@ -11,4 +11,11 @@
     <string name="waiting_for_input">Waiting for input…</string>
     <string name="select_date">Select Date</string>
     <string name="splashtext">that is actually usable on mobile lol</string>
+    <string name="current_date_label">Current Date: %1$s</string>
+    <string name="selected_date_label">Selected Date: %1$s</string>
+    <string name="generating">Generating…</string>
+    <string name="error_no_internet">Error: No Internet connection</string>
+    <string name="error_no_network">Error: Network request failed</string>
+    <string name="failed_key">Failed to find master key</string>
+    <string name="error_server">Error: Server returned %d</string>
 </resources>

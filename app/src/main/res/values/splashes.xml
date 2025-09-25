@@ -58,7 +58,6 @@
         <item>wahoo!</item>
         <item>here we gooo!</item>
         <item>now with extra mushrooms!</item>
-        <item>1-UP unlocked</item>
         <item>mama mia, that’s a spicy key!</item>
         <item>luigi did nothing wrong</item>
         <item>press B to generate faster</item>
@@ -81,7 +80,6 @@
         <item>registered in the Keydex</item>
         <item>do you want to give a nickname to this key?</item>
         <item>do a barrel roll!</item>
-        <item>falcon… KEY!</item>
         <item>Nook Miles +200</item>
         <item>now in 4K!</item>
         <item>your move, Mr. Sakurai</item>
@@ -103,7 +101,6 @@
         <item>parental controls fear me</item>
         <item>this is your 37th ds today isn\'t it?</item>
         <item>pls don’t tell nintendo</item>
-        <item>that one mii face haunts me</item>
         <item>disk tray go brrr</item>
         <item>1000 consoles later…</item>
         <item>keys before coffee</item>
@@ -138,7 +135,7 @@
 
     <string name="splash_01_01">New year, new keys!</string>
     <string name="splash_02_14">Be my key-tine 💖</string>
-    <string name="splash_02_17">Family Day = family keys ❤️</string> <!-- AB, 3rd Mon Feb -->
+    <string name="splash_02_16">Family Day = family keys ❤️</string> <!-- AB, 3rd Mon Feb -->
     <string name="splash_02_29">Leap into more keys!</string> <!-- leap years -->
     <string name="splash_03_10">Happy MAR10 Day!</string>
     <string name="splash_03_17">Lucky keys 🍀</string>
@@ -154,7 +151,7 @@
     <string name="splash_07_01">Happy Canada Day! 🍁🔑</string>
     <string name="splash_07_20">One small step for man, one giant key for mankind</string>
     <string name="splash_06_27">Happy Pride! ❤️🧡💛💚💙💜</string>
-    <string name="splash_08_05">Heritage Day! Celebrate with keys</string> <!-- 1st Mon Aug in Alberta -->
+    <string name="splash_08_03">Heritage Day! Celebrate with keys</string> <!-- 1st Mon Aug in Alberta -->
     <string name="splash_08_08">International Cat Day 🐱🔑</string>
     <string name="splash_08_19">yeehaw its stampede lite 🤠</string>
     <string name="splash_08_20">yeehaw its stampede lite 🤠</string>
@@ -166,7 +163,7 @@
     <string name="splash_09_30">Every Child Matters 🧡</string>
     <string name="splash_10_01">Spooky season begins 🎃</string>
     <string name="splash_10_11">Happy Birthday Chloe! 🎂</string>
-    <string name="splash_10_14">Thanksgiving = turkey + keys 🦃</string> <!-- 2nd Monday in Oct, 2025 = 13th -->
+    <string name="splash_10_13">Thanksgiving = turkey + keys 🦃</string> <!-- 2nd Monday in Oct, 2025 = 13th -->
     <string name="splash_10_31">Trick or key!</string>
     <string name="splash_12_01">Holiday keys activated</string>
     <string name="splash_12_24">All I want for Xmas is keys</string>

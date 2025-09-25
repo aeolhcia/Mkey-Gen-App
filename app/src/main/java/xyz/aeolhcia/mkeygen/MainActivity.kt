@@ -1,4 +1,4 @@
-package xyz.aeolhcia.mkeygen // IMPORTANT: Change this to match your project's package name
+package xyz.aeolhcia.mkeygen
 
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var additionalDataLayout: LinearLayout
     private lateinit var splashTextView: TextView
 
-    @SuppressLint("DefaultLocale", "SetTextI18n")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -82,9 +82,9 @@ class MainActivity : AppCompatActivity() {
         val simpleDateFormat = SimpleDateFormat("MMMM d, yyyy", Locale.getDefault())
 
         // Set initial date to current date
-        monthToPass = String.format("%02d", calendar.get(Calendar.MONTH) + 1)
-        dayToPass = String.format("%02d", calendar.get(Calendar.DAY_OF_MONTH))
-        selectedDateTextView.text = "Current Date: " + simpleDateFormat.format(calendar.time)
+        monthToPass = String.format(Locale.US, "%02d", calendar.get(Calendar.MONTH) + 1)
+        dayToPass = String.format(Locale.US, "%02d", calendar.get(Calendar.DAY_OF_MONTH))
+        selectedDateTextView.text = getString(R.string.current_date_label, simpleDateFormat.format(calendar.time))
 
         datePickerButton.setOnClickListener {
             val year = calendar.get(Calendar.YEAR)
@@ -95,10 +95,9 @@ class MainActivity : AppCompatActivity() {
                 this,
                 { _, selectedYear, selectedMonth, selectedDay ->
                     calendar.set(selectedYear, selectedMonth, selectedDay)
-                    selectedDateTextView.text =
-                        "Selected Date: " + simpleDateFormat.format(calendar.time)
-                    monthToPass = String.format("%02d", selectedMonth + 1)
-                    dayToPass = String.format("%02d", selectedDay)
+                    selectedDateTextView.text = getString(R.string.selected_date_label, simpleDateFormat.format(calendar.time))
+                    monthToPass = String.format(Locale.US, "%02d", selectedMonth + 1)
+                    dayToPass = String.format(Locale.US, "%02d", selectedDay)
                 },
                 year, month, day
             )
@@ -118,14 +117,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Set the initial text and size
-        masterKeyTextView.text = "Waiting for input..."
+        masterKeyTextView.text = getString(R.string.waiting_for_input)
         masterKeyTextView.textSize = 42f // Note: textSize in code uses floats
 
         // Set up the button click listener
         generateButton.setOnClickListener {
 
             // 1. Give the user feedback
-            generateButton.text = "Generating..."
+            generateButton.text = getString(R.string.generating)
             generateButton.isEnabled = false
 
             // 2. Hide the keyboard
@@ -184,25 +183,23 @@ class MainActivity : AppCompatActivity() {
             .build()
 
         client.newCall(request).enqueue(object : Callback {
-            @SuppressLint("SetTextI18n")
             override fun onFailure(call: Call, e: IOException) {
                 val masterKeyTextView: TextView = findViewById(R.id.master_key_text_view)
                 val generateButton: Button = findViewById(R.id.generate_button)
 
                 runOnUiThread {
                     if (e is UnknownHostException) {
-                        masterKeyTextView.text = "Error: No Internet connection."
+                        masterKeyTextView.text = getString(R.string.error_no_internet)
                         textView.textSize = 36f // Revert to 32sp on failure
                     } else {
-                        masterKeyTextView.text = "Error: Network request failed."
+                        masterKeyTextView.text = getString(R.string.error_no_network)
                         textView.textSize = 36f // Revert to 32sp on failure
                     }
-                    generateButton.text = "Generate Key"
+                    generateButton.text = getString(R.string.generate_key)
                     generateButton.isEnabled = true
                 }
             }
 
-            @SuppressLint("SetTextI18n")
             override fun onResponse(call: Call, response: Response) {
                 val masterKeyTextView: TextView = findViewById(R.id.master_key_text_view)
                 val generateButton: Button = findViewById(R.id.generate_button)
@@ -217,17 +214,17 @@ class MainActivity : AppCompatActivity() {
                             splashTextView.text = getSplashText()
 
                         } else {
-                            textView.text = "Failed to find master key."
+                            textView.text = getString(R.string.failed_key)
                             textView.textSize = 42f // Revert to 32sp on failure
                         }
-                        generateButton.text = "Generate Key"
+                        generateButton.text = getString(R.string.generate_key)
                         generateButton.isEnabled = true
                     }
                 } else {
                     runOnUiThread {
-                        masterKeyTextView.text = "Error: Server returned ${response.code}."
+                        masterKeyTextView.text = getString(R.string.error_server, response.code)
                         textView.textSize = 36f // Revert to 32sp on failure
-                        generateButton.text = "Generate Key"
+                        generateButton.text = getString(R.string.generate_key)
                         generateButton.isEnabled = true
                     }
                 }
@@ -248,7 +245,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     // In your MainActivity class
-    @SuppressLint("DiscouragedApi")
     private fun getSplashText(): String {
         // Get the current date and format it as "MM_dd" to match string resource names
         val calendar = Calendar.getInstance()
@@ -256,6 +252,7 @@ class MainActivity : AppCompatActivity() {
         val currentDate = dateFormat.format(calendar.time)
 
         // Check for a specific date splash text in the resources
+        @SuppressLint("DiscouragedApi")
         val resourceId = resources.getIdentifier("splash_$currentDate", "string", packageName)
 
         return if (resourceId != 0) {
