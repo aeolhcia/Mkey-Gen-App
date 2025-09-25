@@ -133,7 +133,6 @@
             android:id="@+id/inquiry_number_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/optional"
             android:imeOptions="actionDone"
             android:importantForAutofill="no"
             android:inputType="number"
