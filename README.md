@@ -30,7 +30,7 @@ A: This tool is mostly intended for people who clean and refurbish consoles all 
 
 ## Screenshots
 
-<img src="/imgs/screenshot01.png" width="330">  <img src="/imgs/screenshot03.png" width="330">  <img src="/imgs/screenshot02.png" width="330"> 
+<img src="/imgs/screenshot01.png" width="300">  <img src="/imgs/screenshot03.png" width="300">  <img src="/imgs/screenshot02.png" width="300"> 
 
 ---
 
